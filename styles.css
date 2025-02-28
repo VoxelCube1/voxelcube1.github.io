@@ -1,7 +1,13 @@
 body{
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 1%;
   font-family: sans-serif;
   color: white;
   background-color: black;
+  text-align: center;
+}
+
+a{
+  color: white;
 }
