@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VoxelCube</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+
 </head>
 <body>
   <h1>VoxelCube</h1>
@@ -20,16 +22,13 @@
     <!-- Carousel items (Images) -->
     <div class="team-container">
       <!-- Image 1 -->
-      <img src="https://picsum.photos/200" alt="Team Member 1" class="team-member">
+      <img src="ferret-pfp.png" alt="Ferretosan" class="team-member">
       
       <!-- Image 2 -->
-      <img src="https://picsum.photos/200" alt="Team Member 2" class="team-member">
+      <img src="bonzai-pfp.jpg" alt="Bonzai The Traveller" class="team-member">
       
       <!-- Image 3 -->
-      <img src="https://picsum.photos/200" alt="Team Member 3" class="team-member">
-      
-      <!-- Image 4 -->
-      <img src="https://picsum.photos/200" alt="Team Member 4" class="team-member">
+      <img src="proplayer-pfp.png" alt="Proplayer919" class="team-member">
     </div>
 
     <!-- Right arrow -->
@@ -37,30 +36,14 @@
   </div>
 
   <!-- Get Involved Section -->
-<section class="get-involved">
+  <section class="get-involved">
     <h2>Get Involved</h2>
     <p>Want to get involved? Enter your email and we'll reach out to you!</p>
-  
     <form id="contact-form">
-        <input type="email" id="user-email" placeholder="Enter your email" required>
-        <button type="submit">Submit</button>
-      </form>
-    
-      <script>
-        // Handle form submission and create a mailto link with the user's email
-        document.getElementById("contact-form").addEventListener("submit", function (e) {
-          e.preventDefault();
-    
-          const userEmail = document.getElementById("user-email").value;
-    
-          // Create a mailto link that opens the user's email client with a pre-filled message
-          const mailtoLink = `mailto:ferret+voxelcube@disroot.org?subject=New%20Interest%20Submission&body=User's%20email:%20${encodeURIComponent(userEmail)}`;
-    
-          // Open the user's email client with the mailto link
-          window.location.href = mailtoLink;
-        });
-      </script>
+      <input type="email" id="user-email" placeholder="Enter your email" required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 
-  <script src="script.js"></script>
 </body>
 </html>

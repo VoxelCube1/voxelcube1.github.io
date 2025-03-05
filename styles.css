@@ -40,7 +40,7 @@ h2 {
   display: flex;
   align-items: center;
   position: relative;
-  width: auto; /* Allow the container to adjust based on its content */
+  width: 80%;
   margin-top: 2rem;
   padding: 0 30px; /* Add padding to prevent the images from being cut off */
   overflow: hidden;
@@ -49,14 +49,14 @@ h2 {
 .team-container {
   display: flex;
   transition: transform 0.5s ease;
-  gap: 20px; /* Adds spacing between images */
+  gap: 20px;
 }
 
 .team-member {
-  width: 150px; /* Square size */
-  height: 150px; /* Square size */
-  border-radius: 15px; /* Rounded corners */
-  object-fit: cover; /* Ensures images cover the square area */
+  width: 150px; /* Image size */
+  height: 150px;
+  border-radius: 15px;
+  object-fit: cover;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
@@ -99,6 +99,20 @@ h2 {
   padding: 2rem;
   margin-top: 3rem;
   text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+.get-involved h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #d8b4fe;
+}
+
+.get-involved p {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+  margin-bottom: 1.5rem;
 }
 
 .get-involved input {
