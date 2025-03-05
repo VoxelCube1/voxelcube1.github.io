@@ -10,6 +10,13 @@ function adjustCarouselAlignment() {
   // Calculate the total width of the images in the current row
   const totalImagesWidth = items[0].offsetWidth * items.length;
 
+  // Dynamically set the width of the carousel container to fit the images
+  if (totalImagesWidth > carouselWidth) {
+    teamContainer.style.width = `${totalImagesWidth}px`;  // Make the container wide enough
+  } else {
+    teamContainer.style.width = '100%';  // Let it take up 100% of the container's width if it fits
+  }
+
   // Dynamically set justify-content to 'center' or 'flex-start' based on if images fit
   if (totalImagesWidth <= carouselWidth) {
     teamContainer.style.justifyContent = 'center'; // Center if they fit

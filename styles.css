@@ -1,24 +1,28 @@
 /* Global Styles */
 body {
   margin: 0;
-  padding: 0;
+
   background: rgb(45,16,31);
   background: linear-gradient(52deg, rgba(45,16,31,1) 0%, rgba(30,11,50,1) 50%, rgba(11,16,41,1) 100%);
   color: white;
-  font-family: monospace;
+  font-family: "SP Pro", "Segoe UI", "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   text-align: center;
+  font-size: 1.08rem;
 }
-
+a{
+  color: white;
+}
 /* Header Styles */
 h1 {
   font-size: 4rem;
   background: linear-gradient(to right, #f9a8d4, #d8b4fe, #a5b4fc);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 2rem;
   animation: fadeIn 1s ease-out;
