@@ -1,3 +1,11 @@
+console.log("====================================")
+console.log("        VoxelCube1.GitHub.io")
+console.log("====================================")
+console.log("Written and maintaned by Ferretosan!")
+console.log("====================================")
+
+
+
 let currentIndex = 0;
 
 function adjustCarouselAlignment() {

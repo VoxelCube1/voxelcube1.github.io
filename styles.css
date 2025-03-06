@@ -1,11 +1,26 @@
+/* Fonts */
+@font-face {
+  font-family: 'FunnelRegular';
+  src: URL('FunnelSans-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FunnelItalic';
+  src: URL('FunnelSans-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FunnelDisplay';
+  src: URL('FunnelDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
 /* Global Styles */
 body {
   margin: 0;
-
   background: rgb(45,16,31);
   background: linear-gradient(52deg, rgba(45,16,31,1) 0%, rgba(30,11,50,1) 50%, rgba(11,16,41,1) 100%);
   color: white;
-  font-family: "SP Pro", "Segoe UI", "Roboto", sans-serif;
+  font-family: "FunnelRegular";
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,10 +28,13 @@ body {
   min-height: 100vh;
   text-align: center;
   font-size: 1.08rem;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 a{
   color: white;
 }
+
 /* Header Styles */
 h1 {
   font-size: 4rem;
@@ -26,6 +44,10 @@ h1 {
   -webkit-text-fill-color: transparent;
   margin-bottom: 2rem;
   animation: fadeIn 1s ease-out;
+  font-family: FunnelDisplay;
+  a{
+    text-decoration: none;
+  }
 }
 
 @keyframes fadeIn {
@@ -37,6 +59,60 @@ h2 {
   font-size: 2rem;
   margin-top: 2rem;
   color: #d8b4fe;
+}
+
+/* Card Styling */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+  margin-bottom: 1.5rem;
+}
+
+.card button {
+  padding: 0.7rem 1.5rem;
+  background-color: #d8b4fe;
+  color: black; /* Changed text color to black */
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #a5b4fc;
+  color: black; /* Ensure the text remains black on hover */
+}
+
+/* Sparkle Animation */
+.sparkle {
+  font-size: 2rem;
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
 }
 
 /* Carousel Styling */
@@ -56,7 +132,7 @@ h2 {
   gap: 20px;
 }
 
-.team-member {
+.imagecard {
   width: 150px; /* Image size */
   height: 150px;
   border-radius: 15px;
@@ -132,7 +208,7 @@ h2 {
 .get-involved button {
   padding: 0.7rem 1.5rem;
   background-color: #d8b4fe;
-  color: white;
+  color: black; /* Changed text color to black */
   font-size: 1rem;
   border: none;
   border-radius: 5px;
@@ -141,4 +217,5 @@ h2 {
 
 .get-involved button:hover {
   background-color: #a5b4fc;
+  color: black; /* Ensure the text remains black on hover */
 }
