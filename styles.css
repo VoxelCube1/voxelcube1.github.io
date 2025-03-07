@@ -126,7 +126,7 @@ h2 {
   overflow: hidden;
 }
 
-.team-container {
+.imagecard-container {
   display: flex;
   transition: transform 0.5s ease;
   gap: 20px;
