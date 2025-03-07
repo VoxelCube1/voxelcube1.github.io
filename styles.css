@@ -31,7 +31,7 @@ body {
   padding-left: 20%;
   padding-right: 20%;
 }
-a{
+a {
   color: white;
 }
 
@@ -45,9 +45,9 @@ h1 {
   margin-bottom: 2rem;
   animation: fadeIn 1s ease-out;
   font-family: FunnelDisplay;
-  a{
-    text-decoration: none;
-  }
+}
+h1 a {
+  text-decoration: none;
 }
 
 @keyframes fadeIn {
@@ -138,6 +138,15 @@ h2 {
   border-radius: 15px;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.imagecard:hover {
+  transform: scale(1.2); /* Image grows on hover */
+}
+
+.imagecard:active {
+  transform: scale(1); /* Image shrinks back when clicked */
 }
 
 /* Arrow Button Styling */
