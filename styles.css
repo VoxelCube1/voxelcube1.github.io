@@ -1,16 +1,16 @@
 /* Fonts */
 @font-face {
-  font-family: 'FunnelRegular';
+  font-family: 'Regular';
   src: URL('FunnelSans-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'FunnelItalic';
+  font-family: 'Italic';
   src: URL('FunnelSans-Italic-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'FunnelDisplay';
+  font-family: 'Display';
   src: URL('FunnelDisplay-VariableFont_wght.ttf') format('truetype');
 }
 
@@ -20,7 +20,7 @@ body {
   background: rgb(45,16,31);
   background: linear-gradient(52deg, rgba(45,16,31,1) 0%, rgba(30,11,50,1) 50%, rgba(11,16,41,1) 100%);
   color: white;
-  font-family: "FunnelRegular";
+  font-family: "Regular";
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,7 +44,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   margin-bottom: 2rem;
   animation: fadeIn 1s ease-out;
-  font-family: FunnelDisplay;
+  font-family: Display;
 }
 h1 a {
   text-decoration: none;
@@ -128,8 +128,9 @@ h2 {
 
 .imagecard-container {
   display: flex;
-  transition: transform 0.5s ease;
+  flex-wrap: wrap; /* Allow images to wrap */
   gap: 20px;
+  justify-content: center; /* Center images when wrapped */
 }
 
 .imagecard {
@@ -139,6 +140,7 @@ h2 {
   object-fit: cover;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   transition: transform 0.3s ease;
+  margin-bottom: 20px; /* Add margin to space out images when wrapped */
 }
 
 .imagecard:hover {
@@ -146,6 +148,32 @@ h2 {
 }
 
 .imagecard:active {
+  transform: scale(1); /* Image shrinks back when clicked */
+}
+/**/
+.simagecard-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap */
+  gap: 20px;
+  justify-content: center; /* Center images when wrapped */
+}
+
+
+.simagecard {
+  width: 50px; /* Image size */
+  height: 50px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px; /* Add margin to space out images when wrapped */
+}
+
+.simagecard:hover {
+  transform: scale(1.2); /* Image grows on hover */
+}
+
+.simagecard:active {
   transform: scale(1); /* Image shrinks back when clicked */
 }
 
