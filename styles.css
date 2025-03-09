@@ -42,7 +42,7 @@ h1 {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem; /*2rem*/
   animation: fadeIn 1s ease-out;
   font-family: Display;
 }
@@ -57,7 +57,7 @@ h1 a {
 
 h2 {
   font-size: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem; /*2rem*/
   color: #d8b4fe;
 }
 

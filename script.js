@@ -1,10 +1,3 @@
-console.log("====================================")
-console.log("        VoxelCube1.GitHub.io")
-console.log("====================================")
-console.log("Written and maintaned by Ferretosan!")
-console.log("====================================")
-
-
 
 let currentIndex = 0;
 
@@ -71,3 +64,5 @@ document.querySelectorAll('.imagecard').forEach(card => {
     this.classList.add('clicked');
   });
 });
+
+console.warn("READ THIS!!!! Theres an 11/10 chance that anything u type in here will mke u get scammed, pls dont do it.")
