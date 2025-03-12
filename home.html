@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoxelCube</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.png">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>VoxelCube</h1>
+  <p>A cozy group, with cozy people, and ... I made a perfect icon.</p>
+  
+  <section id="team">
+    <h2>Meet The Team</h2>
+    <div class="carousel-container">
+    <!-- Left arrow -->
+    <button class="arrow left-arrow" onclick="moveCarousel('left')">&#10094;</button>
+    
+    <!-- Carousel items (Images) -->
+    <div class="team-container">
+      <!-- Image 1 -->
+      <img src="ferret-pfp.png" alt="Ferretosan" class="team-member">
+      
+      <!-- Image 2 -->
+      <img src="bonzai-pfp.jpg" alt="Bonzai The Traveller" class="team-member">
+      
+      <!-- Image 3 -->
+      <img src="proplayer-pfp.png" alt="Proplayer919" class="team-member">
+
+    </div>
+
+    <!-- Right arrow -->
+    <button class="arrow right-arrow" onclick="moveCarousel('right')">&#10095;</button>
+    </div>
+  </section>
+
+  <ection id="projects">
+    <h2>Projects</h2>
+    <p>Over the <s>years</s> <s>months</s> days that this team has been together, we have made a couple of projects together. Like:</p>
+    <ul>
+      <li><a href="https://github.com/Ferretosan/FileBackupTool">FileBackupTool</a> by <a href="ferretosan.html">Ferretosan</a></li>
+      <li><a href="https://github.com/Proplayer919/ClassTools">ClassTools</a> by <a href="proplayer919.html">Proplayer919</a></li>
+      <li><a href="https://github.com/Ferretosan/rpi-leds">rpi-leds</a> by <a href="ferretosan.html">Ferretosan</a></li>
+    </ul>
+  </ection>
+
+  <section id="getinvolved" class="get-involved">
+    <h2>Get Involved</h2>
+    <p>Want to get involved? Enter your email and we'll reach out to you!</p>
+    <form id="contact-form">
+      <input type="email" id="user-email" placeholder="Enter your email" required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+</body>
+</html>

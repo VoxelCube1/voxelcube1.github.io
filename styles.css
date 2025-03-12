@@ -1,13 +1,144 @@
-body{
-  padding-left: 25%;
-  padding-right: 25%;
-  padding-top: 1%;
-  font-family: sans-serif;
-  color: white;
-  background-color: black;
-  text-align: center;
-}
+/* Global Styles */
+body {
+  margin: 0;
 
+  background: rgb(45,16,31);
+  background: linear-gradient(52deg, rgba(45,16,31,1) 0%, rgba(30,11,50,1) 50%, rgba(11,16,41,1) 100%);
+  color: white;
+  font-family: "SP Pro", "Segoe UI", "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  font-size: 1.08rem;
+}
 a{
   color: white;
+}
+/* Header Styles */
+h1 {
+  font-size: 4rem;
+  background: linear-gradient(to right, #f9a8d4, #d8b4fe, #a5b4fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #d8b4fe;
+}
+
+/* Carousel Styling */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  margin-top: 2rem;
+  padding: 0 30px; /* Add padding to prevent the images from being cut off */
+  overflow: hidden;
+}
+
+.team-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 20px;
+}
+
+.team-member {
+  width: 150px; /* Image size */
+  height: 150px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Arrow Button Styling */
+.arrow {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+.arrow:active {
+  transform: scale(0.9);
+}
+
+/* Get Involved Section Styling */
+.get-involved {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+.get-involved h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #d8b4fe;
+}
+
+.get-involved p {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+  margin-bottom: 1.5rem;
+}
+
+.get-involved input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 60%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.get-involved button {
+  padding: 0.7rem 1.5rem;
+  background-color: #d8b4fe;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.get-involved button:hover {
+  background-color: #a5b4fc;
 }
