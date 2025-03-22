@@ -1,3 +1,4 @@
+
 let currentIndex = 0;
 
 function adjustCarouselAlignment() {
@@ -53,3 +54,15 @@ function moveCarousel(direction) {
 
 // Call adjustCarouselAlignment on page load to determine alignment
 window.addEventListener('load', adjustCarouselAlignment);
+
+document.querySelectorAll('.imagecard').forEach(card => {
+  card.addEventListener('click', function() {
+    // Remove 'clicked' class from all imagecards
+    document.querySelectorAll('.imagecard').forEach(c => c.classList.remove('clicked'));
+
+    // Add 'clicked' class to the clicked imagecard
+    this.classList.add('clicked');
+  });
+});
+
+console.warn("READ THIS!!!! Theres an 11/10 chance that anything u type in here will mke u get scammed, pls dont do it.")
