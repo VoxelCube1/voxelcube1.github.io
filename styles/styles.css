@@ -1,0 +1,342 @@
+/* Fonts */
+@font-face {
+  font-family: 'Regular';
+  src: URL('/fonts/FunnelSans-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Italic';
+  src: URL('/fonts/FunnelSans-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Display';
+  src: URL('/fonts/FunnelDisplay-VariableFont_wght.ttf') format('truetype');
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  background: rgb(45,16,31);
+  background: linear-gradient(52deg, rgba(45,16,31,1) 0%, rgba(30,11,50,1) 50%, rgba(11,16,41,1) 100%);
+  color: white;
+  font-family: "Regular";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  font-size: 1.08rem;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+a {
+  color: white;
+}
+
+/* Header Styles */
+h1 {
+  font-size: 4rem;
+  background: linear-gradient(to right, #f9a8d4, #d8b4fe, #a5b4fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem; /*2rem*/
+  animation: fadeIn 1s ease-out;
+  font-family: Display;
+}
+h1 a {
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 1rem; /*2rem*/
+  color: #d8b4fe;
+}
+
+/* Card Styling */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+  margin-bottom: 1.5rem;
+}
+
+.card button {
+  padding: 0.7rem 1.5rem;
+  background-color: #d8b4fe;
+  color: black; /* Changed text color to black */
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #a5b4fc;
+  color: black; /* Ensure the text remains black on hover */
+}
+
+/* Sparkle Animation */
+.sparkle {
+  font-size: 2rem;
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+/* Carousel Styling */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  margin-top: 2rem;
+  padding: 0 30px; /* Add padding to prevent the images from being cut off */
+  overflow: hidden;
+}
+
+.imagecard-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap */
+  gap: 20px;
+  justify-content: center; /* Center images when wrapped */
+}
+
+.imagecard {
+  width: 150px; /* Image size */
+  height: 150px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px; /* Add margin to space out images when wrapped */
+}
+
+.imagecard:hover {
+  transform: scale(1.2); /* Image grows on hover */
+}
+
+.imagecard:active {
+  transform: scale(1); /* Image shrinks back when clicked */
+}
+/**/
+.simagecard-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap */
+  gap: 20px;
+  justify-content: center; /* Center images when wrapped */
+}
+
+
+.simagecard {
+  width: 50px; /* Image size */
+  height: 50px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px; /* Add margin to space out images when wrapped */
+}
+
+.simagecard:hover {
+  transform: scale(1.2); /* Image grows on hover */
+}
+
+.simagecard:active {
+  transform: scale(1); /* Image shrinks back when clicked */
+}
+
+/* Arrow Button Styling */
+.arrow {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+.arrow:active {
+  transform: scale(0.9);
+}
+
+/* Get Involved Section Styling */
+.get-involved {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+.get-involved h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #d8b4fe;
+}
+
+.get-involved p {
+  font-size: 1.2rem;
+  color: #f1f1f1;
+  margin-bottom: 1.5rem;
+}
+
+.get-involved input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 60%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.get-involved button {
+  padding: 0.7rem 1.5rem;
+  background-color: #d8b4fe;
+  color: black; /* Changed text color to black */
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.get-involved button:hover {
+  background-color: #a5b4fc;
+  color: black; /* Ensure the text remains black on hover */
+}
+
+/* Responsive adjustments for tablets and below */
+@media (max-width: 1024px) {
+  body {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .card, .get-involved {
+    width: 90%;
+  }
+
+  .imagecard {
+    width: 120px;
+    height: 120px;
+  }
+
+  .simagecard {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 600px) {
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card, .get-involved {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .imagecard {
+    width: 100px;
+    height: 100px;
+  }
+
+  .simagecard {
+    width: 30px;
+    height: 30px;
+  }
+
+  .arrow {
+    font-size: 1.5rem;
+    padding: 0.7rem;
+  }
+
+  .get-involved input {
+    width: 90%;
+  }
+
+  .get-involved button {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button, a {
+  touch-action: manipulation;
+}
