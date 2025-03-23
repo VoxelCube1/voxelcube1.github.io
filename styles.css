@@ -256,3 +256,87 @@ h2 {
   background-color: #a5b4fc;
   color: black; /* Ensure the text remains black on hover */
 }
+
+/* Responsive adjustments for tablets and below */
+@media (max-width: 1024px) {
+  body {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .card, .get-involved {
+    width: 90%;
+  }
+
+  .imagecard {
+    width: 120px;
+    height: 120px;
+  }
+
+  .simagecard {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 600px) {
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card, .get-involved {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .imagecard {
+    width: 100px;
+    height: 100px;
+  }
+
+  .simagecard {
+    width: 30px;
+    height: 30px;
+  }
+
+  .arrow {
+    font-size: 1.5rem;
+    padding: 0.7rem;
+  }
+
+  .get-involved input {
+    width: 90%;
+  }
+
+  .get-involved button {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button, a {
+  touch-action: manipulation;
+}
