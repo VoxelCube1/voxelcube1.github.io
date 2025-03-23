@@ -1,17 +1,17 @@
 /* Fonts */
 @font-face {
   font-family: 'Regular';
-  src: URL('FunnelSans-VariableFont_wght.ttf') format('truetype');
+  src: URL('/fonts/FunnelSans-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Italic';
-  src: URL('FunnelSans-Italic-VariableFont_wght.ttf') format('truetype');
+  src: URL('/fonts/FunnelSans-Italic-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Display';
-  src: URL('FunnelDisplay-VariableFont_wght.ttf') format('truetype');
+  src: URL('/fonts/FunnelDisplay-VariableFont_wght.ttf') format('truetype');
 }
 
 /* Global Styles */
